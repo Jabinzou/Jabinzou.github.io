@@ -26,7 +26,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-<link rel="alternate" href="/atom.xml" title="Jabinzou" type="application/atom+xml">
+<meta name="generator" content="Hexo 4.1.0"><link rel="alternate" href="/atom.xml" title="Jabinzou" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -263,7 +263,8 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url('+ 'http://img.lavizou.cn/banner' + Math.ceil(new Date().getDay()/2) + '.jpg)');
 </script>
 
 
@@ -283,11 +284,11 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/highlight/" title="highlight: 1">
+                <a href="/tags/highlight/" title="highlight: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="highlight" style="background-color: #F9EBEA;">highlight
-                        <span class="tag-length">1</span>
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -315,7 +316,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"highlight","weight":1,"link":"https://jabinzou.github.io/tags/highlight/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"highlight","weight":2,"link":"https://jabinzou.github.io/tags/highlight/"}], {
         autoResize: true
     });
 </script>
@@ -387,11 +388,11 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js"></script>
     <script src="/js/matery.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -434,6 +435,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script></body>
 
 </html>
