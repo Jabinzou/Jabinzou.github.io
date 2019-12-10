@@ -592,7 +592,7 @@
 
 <script>
     $(function () {
-        $('.tabs').tabs();
+        $('.tabs').tabs && $('.tabs').tabs();
     });
 </script>
             
@@ -603,7 +603,7 @@
         <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
 <link rel="stylesheet" href="/css/my-gitalk.css">
 
-<div class="card gitalk-card" data-aos="fade-up">
+<div class="card gitalk-card" data-aos-once="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
@@ -612,7 +612,7 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.5.0/gitalk.min.js"></script>
-<script>
+<script defer>
     let gitalk = new Gitalk({
         clientID: '72cf2a601a01aad02352',
         clientSecret: 'e2360de30bf6d8442f142cca3bbc0be46dd91b87',
@@ -895,7 +895,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 </div>
 
 <script src="/js/search.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" defer>
 $(function () {
     searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
 });
@@ -921,20 +921,6 @@ $(function () {
     <!-- Baidu Analytics -->
 
     <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
     
     
