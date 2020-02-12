@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jabinzou.github.io/"/>
-  <updated>2019-12-10T09:57:53.000Z</updated>
+  <updated>2020-02-12T05:36:04.453Z</updated>
   <id>https://jabinzou.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>node 错误栈追踪</title>
+    <link href="https://jabinzou.github.io/2019/12/13/node-cuo-wu-zhan-zhui-zong/"/>
+    <id>https://jabinzou.github.io/2019/12/13/node-cuo-wu-zhan-zhui-zong/</id>
+    <published>2019-12-13T12:03:54.291Z</published>
+    <updated>2020-02-12T05:36:04.453Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;js的堆栈&quot;&gt;&lt;a href=&quot;#js的堆栈&quot; class=&quot;headerlink&quot; title=&quot;js的堆栈&quot;&gt;&lt;/a&gt;js的堆栈&lt;/h3&gt;&lt;p&gt;首先我们需要知道，js的堆栈是什么，即js的函数执行是怎恶样的？&lt;br&gt;根据定义：堆栈的数据结构
+        
+      
+    
+    </summary>
+    
+    
+      <category term="nodejs" scheme="https://Jabinzou.github.io/categories/nodejs/"/>
+    
+    
+      <category term="nodejs" scheme="https://Jabinzou.github.io/tags/nodejs/"/>
+    
+  </entry>
   
   <entry>
     <title>vue源码分析之vnode-patch-diff</title>
