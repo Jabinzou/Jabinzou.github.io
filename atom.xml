@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jabinzou.github.io/"/>
-  <updated>2020-02-12T05:36:04.453Z</updated>
+  <updated>2020-02-12T05:51:39.496Z</updated>
   <id>https://jabinzou.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue源码分析之生命周期</title>
+    <link href="https://jabinzou.github.io/2020/02/12/vue-yuan-ma-zhi-sheng-ming-zhou-qi/"/>
+    <id>https://jabinzou.github.io/2020/02/12/vue-yuan-ma-zhi-sheng-ming-zhou-qi/</id>
+    <published>2020-02-12T05:46:35.347Z</published>
+    <updated>2020-02-12T05:51:39.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;对于vue我们在开篇就可以看到对于vue的生命周期做了图形展示，而我们日常的开发通常使用到的会很多涉及到vue的生命周期的运用，那么vue的生命周期每个周期都经过哪些过程？我们这篇文章就对vue源码层级进行分析，解读vue的生命周期。&lt;/p&gt;
+&lt;p&gt;vue版本：
+        
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="https://Jabinzou.github.io/categories/vue/"/>
+    
+    
+      <category term="源码分析" scheme="https://Jabinzou.github.io/tags/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
   
   <entry>
     <title>node 错误栈追踪</title>
