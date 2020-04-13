@@ -406,8 +406,8 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>什么是docker呢？docker是用来干什么的呢？为什么要讲docker呢？我们可以通过几个概念来一一进行展开。</p>
-<h4 id="程序运行环境"><a href="#程序运行环境" class="headerlink" title="程序运行环境"></a>程序运行环境</h4><p>一般对于B端的产品(软件程序)对于不同机器的部署来说，最为头痛的就是如何在用户的不同机器上保证自家的服务能够跑起来，能够最快跑起来，能够稳定跑起来？这个时候陆陆续有对应的解决方案应运而生。</p>
-<h5 id="一、虚拟机"><a href="#一、虚拟机" class="headerlink" title="一、虚拟机"></a>一、虚拟机</h5><p>虚拟机（virtual machine）就是带环境安装的一种解决方案。它可以在一种操作系统里面运行另一种操作系统，比如在 Windows 系统里面运行 Linux 系统。</p>
+<h3 id="程序运行环境"><a href="#程序运行环境" class="headerlink" title="程序运行环境"></a>程序运行环境</h3><p>一般对于B端的产品(软件程序)对于不同机器的部署来说，最为头痛的就是如何在用户的不同机器上保证自家的服务能够跑起来，能够最快跑起来，能够稳定跑起来？这个时候陆陆续有对应的解决方案应运而生。</p>
+<h4 id="一、虚拟机"><a href="#一、虚拟机" class="headerlink" title="一、虚拟机"></a>一、虚拟机</h4><p>虚拟机（virtual machine）就是带环境安装的一种解决方案。它可以在一种操作系统里面运行另一种操作系统，比如在 Windows 系统里面运行 Linux 系统。</p>
 <p>但是对应的会存在很多缺点：</p>
 <p>（1）资源占用多</p>
 <p>虚拟机会独占一部分内存和硬盘空间。它运行的时候，其他程序就不能使用这些资源了。哪怕虚拟机里面的应用程序，真正使用的内存只有 1MB，虚拟机依然需要几百 MB 的内存才能运行。</p>
@@ -415,7 +415,7 @@
 <p>虚拟机是完整的操作系统，一些系统级别的操作步骤，往往无法跳过，比如用户登录。</p>
 <p>（3）启动慢</p>
 <p>启动操作系统需要多久，启动虚拟机就需要多久。可能要等几分钟，应用程序才能真正运行。</p>
-<h5 id="二、Linux容器"><a href="#二、Linux容器" class="headerlink" title="二、Linux容器"></a>二、Linux容器</h5><p>Linux 容器（Linux Containers，缩写为 LXC）。</p>
+<h4 id="二、Linux容器"><a href="#二、Linux容器" class="headerlink" title="二、Linux容器"></a>二、Linux容器</h4><p>Linux 容器（Linux Containers，缩写为 LXC）。</p>
 <p>Linux 容器不是模拟一个完整的操作系统，而是对进程进行隔离。或者说，在正常进程的外面套了一个保护层。对于容器里面的进程来说，它接触到的各种资源都是虚拟的，从而实现与底层系统的隔离。</p>
 <p>由于容器是 <strong>进程级别</strong> 的，相比虚拟机有很多优势。</p>
 <p>（1）启动快</p>
@@ -425,7 +425,7 @@
 <p>（3）体积小</p>
 <p>容器只要包含用到的组件即可，而虚拟机是整个操作系统的打包，所以容器文件比虚拟机文件要小很多。</p>
 <p>总之，容器有点像轻量级的虚拟机，能够提供虚拟化的环境，但是成本开销小得多。</p>
-<h5 id="三、docker"><a href="#三、docker" class="headerlink" title="三、docker"></a>三、docker</h5><p>docker英文翻译过来就是码头搬运工，但其实更像是集装箱，集装箱解决了什么问题？在一艘大船上，可以把货物规整的摆放起来。并且各种各样的货物被集装箱标准化了，集装箱和集装箱之间不会互相影响。</p>
+<h4 id="三、docker"><a href="#三、docker" class="headerlink" title="三、docker"></a>三、docker</h4><p>docker英文翻译过来就是码头搬运工，但其实更像是集装箱，集装箱解决了什么问题？在一艘大船上，可以把货物规整的摆放起来。并且各种各样的货物被集装箱标准化了，集装箱和集装箱之间不会互相影响。</p>
 <blockquote>
 <p>Docker 属于 Linux 容器的一种封装，提供简单易用的容器使用接口。它是目前最流行的 Linux 容器解决方案。</p>
 </blockquote>
@@ -443,7 +443,7 @@
 <p>（1）提供一次性的环境。比如，本地测试他人的软件、持续集成的时候提供单元测试和构建的环境。</p>
 <p>（2）提供弹性的云服务。因为 Docker 容器可以随开随关，很适合动态扩容和缩容。</p>
 <p>（3）组建微服务架构。通过多个容器，一台机器可以跑多个服务，因此在本机就可以模拟出微服务架构。</p>
-<h4 id="docker的概念"><a href="#docker的概念" class="headerlink" title="docker的概念"></a>docker的概念</h4><ol>
+<h3 id="docker的概念"><a href="#docker的概念" class="headerlink" title="docker的概念"></a>docker的概念</h3><ol>
 <li>镜像 Image</li>
 </ol>
 <p>操作系统分为内核和用户空间。对于 Linux 而言，内核启动后，会挂载 root 文件系统为其提供用户空间支持。而Docker 镜像（Image），就相当于是一个 root 文件系统。</p>
@@ -475,7 +475,7 @@
 <li><p>个仓库会包含同一个软件不同版本的镜像，而标签就常用于对应该软件的各个版本 。我们可以通过&lt;仓库名&gt;:&lt;标签&gt;的格式来指定具体是这个软件哪个版本的镜像</p>
 </li>
 </ul>
-<h4 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h4><p>安装docker在linux上其实就像是其他程序安装类似。安装程序提供了容器和底层系统之间建立了运行的基础.</p>
+<h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><p>安装docker在linux上其实就像是其他程序安装类似。安装程序提供了容器和底层系统之间建立了运行的基础.</p>
 <p>Docker 分为 CE 和 EE 两大版本。CE 即社区版（免费，支持周期 7 个月），EE 即企业版，强调安全，付费使用，支持周期 24 个月。</p>
 <p>具体的安装参考 <a href="https://docs.docker.com/install/" target="_blank" rel="noopener">docker安装</a> </p>
 <p>安装之后可以通过</p>
@@ -484,7 +484,7 @@ docker version
 
 # 允许hello-world镜像，验证是否正确安装
 docker run hello-world</code></pre>
-<h5 id="镜像操作"><a href="#镜像操作" class="headerlink" title="镜像操作"></a>镜像操作</h5><ol>
+<h4 id="镜像操作"><a href="#镜像操作" class="headerlink" title="镜像操作"></a>镜像操作</h4><ol>
 <li>获取镜像</li>
 </ol>
 <pre class=" language-shell"><code class="language-shell">$ docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]</code></pre>
@@ -527,7 +527,7 @@ ubuntu               latest              f753707788c5        4 weeks ago        
 <p>如果要删除本地的镜像，可以使用 docker image rm 命令，其格式为：</p>
 <pre class=" language-shell"><code class="language-shell">$ docker image rm [选项] <镜像1> [<镜像2> ...]</code></pre>
 <p>其中，&lt;镜像&gt; 可以是 <code>镜像短 ID</code>、<code>镜像长 ID</code>、<code>镜像名</code> 或者 <code>镜像摘要</code></p>
-<h5 id="启动容器的准备"><a href="#启动容器的准备" class="headerlink" title="启动容器的准备"></a>启动容器的准备</h5><ol>
+<h4 id="启动容器的准备"><a href="#启动容器的准备" class="headerlink" title="启动容器的准备"></a>启动容器的准备</h4><ol>
 <li>Dockerfile 文件书写</li>
 </ol>
 <p>Dockerfile 是一个文本文件，其内包含了一条条的 <code>指令(Instruction)</code>，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。</p>
@@ -579,7 +579,7 @@ $ docker build --tag=hellodocker .</code></pre>
 <p>并且最后会有一个 <code>.</code>  表示当前的运行路径</p>
 <pre class=" language-shell"><code class="language-shell">docker build [选项] <上下文路径/URL/-></code></pre>
 <p>更多的Dockerfile指令参考 <a href="https://yeasy.gitbooks.io/docker_practice/image/dockerfile/" target="_blank" rel="noopener">指令详解</a></p>
-<h5 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h5><p>当利用 <code>docker run</code> 来创建容器时，Docker 在后台运行的标准操作包括：</p>
+<h4 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h4><p>当利用 <code>docker run</code> 来创建容器时，Docker 在后台运行的标准操作包括：</p>
 <ul>
 <li>检查本地是否存在指定的镜像，不存在就从公有仓库下载</li>
 <li>利用镜像创建并启动一个容器</li>
@@ -610,7 +610,7 @@ $ docker container ls
 CONTAINER ID  IMAGE         COMMAND               CREATED        STATUS       PORTS NAMES
 77b2dc01fe0f  hellodocker:v1  /bin/sh
 </code></pre>
-<h5 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h5><p>使用Dockerfile文件可以很方便定义一个容器。但在日常的工作中一个项目可能需要多个容器(前端，后端，数据库)。Compose允许用户定义docker-compose.yml模版文件，来定义一组相关联的容器为一组项目。<br>Compose中两个概念：</p>
+<h3 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h3><p>使用Dockerfile文件可以很方便定义一个容器。但在日常的工作中一个项目可能需要多个容器(前端，后端，数据库)。Compose允许用户定义docker-compose.yml模版文件，来定义一组相关联的容器为一组项目。<br>Compose中两个概念：</p>
 <ul>
 <li>服务(service)，一个应用的容器，可以是多个相同镜像的实例。</li>
 <li>项目(project)，一组关联的应用容器组成的完整业务单元, 在docker-compose.yml中定义</li>
@@ -674,7 +674,7 @@ services:
     # 容器使用的镜像
     image: "redis:alpine"</code></pre>
 <p>更多指令 参考<a href="https://yeasy.gitbooks.io/docker_practice/compose/compose_file.html" target="_blank" rel="noopener">指令</a></p>
-<h5 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h5><p>如果你搜索Docker官网，会发现如下的字样：“Docker - Build, Ship, and Run Any App, Anywhere”。那么Build, Ship, and Run到底是在干什么呢？</p>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>如果你搜索Docker官网，会发现如下的字样：“Docker - Build, Ship, and Run Any App, Anywhere”。那么Build, Ship, and Run到底是在干什么呢？</p>
 <ul>
 <li>Build（构建镜像） ： 镜像就像是集装箱包括文件以及运行环境等等资源。</li>
 <li>Ship（运输镜像） ：主机和仓库间运输，这里的仓库就像是超级码头一样。</li>
