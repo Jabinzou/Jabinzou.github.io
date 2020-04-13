@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jabinzou.github.io/"/>
-  <updated>2020-02-12T06:15:55.770Z</updated>
+  <updated>2020-04-13T11:18:56.871Z</updated>
   <id>https://jabinzou.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker实践</title>
+    <link href="https://jabinzou.github.io/2020/04/13/docker-shi-jian/"/>
+    <id>https://jabinzou.github.io/2020/04/13/docker-shi-jian/</id>
+    <published>2020-04-13T03:18:03.331Z</published>
+    <updated>2020-04-13T11:18:56.871Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;什么是docker呢？docker是用来干什么的呢？为什么要讲docker呢？我们可以通过几个概念来一一进行展开。&lt;/p&gt;
+&lt;h4 id=&quot;程序运行环境&quot;&gt;&lt;a href=&quot;#程序运行环境&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Docker" scheme="https://Jabinzou.github.io/categories/Docker/"/>
+    
+    
+      <category term="docker" scheme="https://Jabinzou.github.io/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>vue源码分析之生命周期</title>
